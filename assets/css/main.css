@@ -1405,7 +1405,8 @@ html.dark {
   position: absolute;
   left: 0;
   width: min(1240px, 100%);
-  margin-top: 54px;
+  padding-top: 54px;
+  display: none;
 }
 .dropdown__inner {
   --inner-padding: 30px;
@@ -1440,13 +1441,18 @@ html.dark {
   gap: 14px;
 }
 .menu-column + .menu-column {
-  margin-top: var(--inner-padding);
+  margin-top: 23px;
 }
 .menu-column__icon {
   position: relative;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
+}
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
 }
 .menu-column__content {
   flex: 1;
