@@ -3,7 +3,6 @@
 %flexItemsCenter {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .header {
@@ -102,10 +101,6 @@
 
         @include abstracts.breakpoint(lg) {
             width: 100%;
-
-            &:hover .dropdown {
-                display: none;
-            }
         }
     }
 

@@ -1337,7 +1337,6 @@ html.dark {
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .header {
@@ -1429,9 +1428,6 @@ html.dark {
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
-  }
-  .navbar__item:hover .dropdown {
-    display: none;
   }
 }
 .navbar__link {
@@ -1549,6 +1545,7 @@ html.dark {
   .dropdown {
     position: initial;
     display: block;
+    padding-top: 0;
   }
 }
 .dropdown__inner {
@@ -1605,6 +1602,11 @@ html.dark {
 .menu-column + .menu-column {
   margin-top: 23px;
 }
+@media (max-width: 991.98px) {
+  .menu-column {
+    margin-top: 10px;
+  }
+}
 .menu-column__icon {
   position: relative;
   flex-shrink: 0;
@@ -1645,8 +1647,18 @@ html.dark {
   line-height: 1.5;
   margin-top: 4px;
 }
+@media (max-width: 991.98px) {
+  .menu-column__heading {
+    margin-bottom: 19px;
+  }
+}
 .menu-column__list {
   margin-top: 19px;
+}
+@media (max-width: 991.98px) {
+  .menu-column__list {
+    margin-top: 0;
+  }
 }
 .menu-column__item--active .sub-menu {
   display: grid;
@@ -1676,6 +1688,7 @@ html.dark {
   .sub-menu {
     position: initial;
     grid-template-columns: 1fr;
+    padding-left: 0;
   }
 }
 .sub-menu--not-main {

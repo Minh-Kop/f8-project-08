@@ -11,6 +11,7 @@
     @include abstracts.breakpoint(lg) {
         position: initial;
         display: block;
+        padding-top: 0;
     }
 
     &__inner {
@@ -74,6 +75,10 @@
         margin-top: 23px;
     }
 
+    @include abstracts.breakpoint(lg) {
+        margin-top: 10px;
+    }
+
     &__icon {
         position: relative;
         flex-shrink: 0;
@@ -119,10 +124,18 @@
         line-height: 1.5;
 
         margin-top: 4px;
+
+        @include abstracts.breakpoint(lg) {
+            margin-bottom: 19px;
+        }
     }
 
     &__list {
         margin-top: 19px;
+
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0;
+        }
     }
 
     &__item {
@@ -161,6 +174,7 @@
     @include abstracts.breakpoint(lg) {
         position: initial;
         grid-template-columns: 1fr;
+        padding-left: 0;
     }
 
     &--not-main {
