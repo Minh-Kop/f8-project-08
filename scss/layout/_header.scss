@@ -3,6 +3,7 @@
 %flexItemsCenter {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -88,6 +89,7 @@
         @include abstracts.breakpoint(lg) {
             flex-direction: column;
             align-items: flex-start;
+            justify-content: initial;
 
             overflow-y: auto;
             height: calc(100% - 26px);

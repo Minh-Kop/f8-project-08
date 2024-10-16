@@ -1337,6 +1337,7 @@ html.dark {
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -1418,6 +1419,7 @@ html.dark {
   .navbar__list {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: initial;
     overflow-y: auto;
     height: calc(100% - 26px);
   }
@@ -1698,6 +1700,12 @@ html.dark {
   grid-template-columns: repeat(4, 1fr);
   height: var(--max-inner-height);
   padding-left: 0;
+}
+@media (max-width: 991.98px) {
+  .sub-menu--not-main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
