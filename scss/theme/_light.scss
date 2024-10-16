@@ -2,8 +2,8 @@
 
 :root {
     --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(9%) sepia(52%)
-        saturate(646%) hue-rotate(210deg) brightness(92%) contrast(99%);
+    --icon-color: brightness(0) saturate(100%) invert(9%) sepia(52%) saturate(646%) hue-rotate(210deg) brightness(92%)
+        contrast(99%);
 
     --body-bg: #f6f6f6;
     --header-bg-color: #eeeeee;
@@ -20,4 +20,8 @@
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
     --top-menu-border-color: #d2d1d6;
+
+    // Sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow: rgba(200, 200, 200, 0.4);
 }
