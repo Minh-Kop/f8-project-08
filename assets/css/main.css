@@ -1432,6 +1432,7 @@ html.dark {
     align-items: flex-start;
     justify-content: initial;
     overflow-y: auto;
+    overscroll-behavior: contain;
     height: calc(100% - 40px);
   }
 }
