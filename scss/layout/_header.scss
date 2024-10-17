@@ -68,7 +68,6 @@
 
     &__close-btn {
         display: none;
-        padding: 0;
 
         @include abstracts.screen(lg) {
             display: block;
