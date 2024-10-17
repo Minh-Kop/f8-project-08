@@ -8,7 +8,7 @@
     padding-top: 54px;
     display: none;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         padding-top: 0;
     }
@@ -33,7 +33,7 @@
             filter: var(--dropdown-arrow-color);
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             padding: 0;
             border-radius: 0;
             background-color: transparent;
@@ -58,7 +58,7 @@
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             width: 100%;
             height: auto;
             border-right: none;
@@ -74,7 +74,7 @@
         margin-top: 23px;
     }
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         margin-top: 10px;
     }
 
@@ -84,11 +84,11 @@
         width: 36px;
         height: 36px;
 
-        @include abstracts.breakpoint(xl) {
+        @include abstracts.screen(xl) {
             display: none;
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             display: block;
         }
     }
@@ -124,7 +124,7 @@
 
         margin-top: 4px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             margin-bottom: 19px;
         }
     }
@@ -132,7 +132,7 @@
     &__list {
         margin-top: 19px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             margin-top: 0;
         }
     }
@@ -170,7 +170,7 @@
 
     overflow-y: auto;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: initial;
         grid-template-columns: 1fr;
         padding-left: 0;
@@ -184,7 +184,7 @@
         height: var(--max-inner-height);
         padding-left: 0;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             grid-template-columns: 1fr;
             height: auto;
         }
