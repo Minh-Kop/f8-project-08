@@ -30,13 +30,13 @@ textarea,
 select {
     font-family: inherit;
     color: inherit;
+    outline: none;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 
 button {
     border: none;
-    outline: none;
     background-color: transparent;
     padding: 0;
 }
