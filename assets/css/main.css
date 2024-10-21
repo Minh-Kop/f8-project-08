@@ -1609,6 +1609,7 @@ html.dark {
 .footer {
   margin-top: 50px;
   padding: 50px 0;
+  font-size: 1.4rem;
   background: var(--footer-bg-color);
 }
 .footer__row {
@@ -1628,7 +1629,6 @@ html.dark {
 }
 .footer__desc {
   margin-top: 30px;
-  font-size: 1.5rem;
   line-height: 1.5;
 }
 @media (max-width: 991.98px) {
@@ -1638,7 +1638,6 @@ html.dark {
 }
 .footer__help-text {
   margin-top: 40px;
-  font-size: 1.4rem;
   line-height: 1.4;
 }
 .footer__heading {
@@ -1651,7 +1650,6 @@ html.dark {
 }
 .footer__link, .footer__text {
   padding: 8px 0;
-  font-size: 1.5rem;
   line-height: 1.4;
 }
 .footer__link {
@@ -1707,15 +1705,13 @@ html.dark {
 @media (max-width: 767.98px) {
   .footer__input {
     width: 50%;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 575.98px) {
   .footer__input {
     flex: 1;
   }
-}
-.footer__copyright {
-  font-size: 1.4rem;
 }
 .footer__bottom {
   margin-top: 50px;
@@ -1746,6 +1742,12 @@ html.dark {
   transition: translate, filter;
   transition-duration: 0.3s;
 }
+@media (max-width: 575.98px) {
+  .footer__social-link {
+    width: 42px;
+    height: 42px;
+  }
+}
 .footer__social-link:hover {
   filter: grayscale(0);
   translate: 0 -5px;
@@ -1768,6 +1770,11 @@ html.dark {
 .footer__social-icon {
   width: 16px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(185deg) brightness(103%) contrast(101%);
+}
+@media (max-width: 575.98px) {
+  .footer__social-icon {
+    width: 18px;
+  }
 }
 
 .logo {
@@ -2363,7 +2370,7 @@ html.dark {
 }
 @media (max-width: 575.98px) {
   .filter__form-input {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
   }
 }
 .filter__form-input::placeholder {
